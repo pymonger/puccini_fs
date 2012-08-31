@@ -20,7 +20,7 @@ fusermount -u $MOUNT
 rm -rf $HOME/workspace/pysolr/solr/solr_example/solr/data
 
 # clean out root
-rm -rf $MOUNT/* $MOUNT/.DS* $MOUNT/._*
+rm -rf $ROOT/* $ROOT/.DS* $ROOT/._*
 
 # start up supervisord
 cd $HOME
