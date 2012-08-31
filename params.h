@@ -6,8 +6,8 @@
 
 // The FUSE API has been changed a number of times.  So, our code
 // needs to define the version of the API that we assume.  As of this
-// writing, the most current API version is 26
-#define FUSE_USE_VERSION 26
+// writing, the most current API version is 28
+#define FUSE_USE_VERSION 28
 
 // need this to get pwrite().  I have to use setvbuf() instead of
 // setlinebuf() later in consequence.
