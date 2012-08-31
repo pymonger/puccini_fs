@@ -9,7 +9,7 @@ log = logging.getLogger()
 
 
 IGNORE_FILES = [
-    '.._',
+    '._',
     '.DS_Store',
     '.localized',
     '.fseventsd',

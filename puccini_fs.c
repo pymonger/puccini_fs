@@ -1032,9 +1032,9 @@ int main(int argc, char *argv[])
     argv[i] = argv[i+1];
     argc--;
 
-    fprintf(stderr, "about to call fuse_main\n");
+    //fprintf(stderr, "about to call fuse_main\n");
     fuse_stat = fuse_main(argc, argv, &puccini_oper, puccini_data);
-    fprintf(stderr, "fuse_main returned %d\n", fuse_stat);
+    //fprintf(stderr, "fuse_main returned %d\n", fuse_stat);
     
     return fuse_stat;
 }

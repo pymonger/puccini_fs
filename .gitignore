@@ -13,3 +13,6 @@
 
 # Compiled executable
 puccini_fs
+
+# python pyc files
+*.pyc
