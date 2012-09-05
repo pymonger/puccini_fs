@@ -24,7 +24,7 @@ IGNORE_FILES = [
 def getLDOSInfo():
     """Return LDOS root directory and solr url."""
 
-    return "/data/public", "http://localhost:8984"
+    return "/data/public_fuse", "http://localhost:8984"
 
 def ncdump(file):
     """Run ncdump locally on a file and extract metadata."""
@@ -71,7 +71,7 @@ def indexInLDOS(file):
     s = Solr(httplib2.Http(), ldosSolr)
 
     # add SOLR entry
-    documentFields = { 'path': file }
+    documentFields = { 'path': os.path.join(ldosRoot, os.path.basename(file)) }
 
     # http://docs.python.org/library/uuid.html
     documentFields['doc_id'] = str( uuid.uuid1() )
